@@ -3,7 +3,7 @@ A Qt application for automating the installing and uninstalling of neotokyo mods
 Uses Qt 5.15.2
 
 ## First time setup
-A prebuilt version can be found here: (link coming soon)
+A prebuilt version can be found here: https://github.com/NotHosomi/nt-mod-manager/releases/tag/v1.0
 Unzip the downloaded file and move the `/ModManager/` directory into your Neotokyo install alongside hl2.exe
 Expected filepath: `<Steamapps>/common/NEOTOKYO/ModManager/NeotokyoModManage.exe`
 Run the application, then place your mods in `<Steamapps>/common/NEOTOKYO/ModManager/mods/`.

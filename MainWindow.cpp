@@ -41,12 +41,12 @@ void MainWindow::on_btn_Apply_clicked()
                 p->setBackgroundColor(QColor(255, 0, 0));
             }
         }
-        ui.lbl_Status->setText("Done with error.");
+        ui.lbl_Status->setText("Done with error(s)");
         ErrorDialogue(errorText);
     }
     else
     {
-        ui.lbl_Status->setText("Done.");
+        ui.lbl_Status->setText("Done");
     }
 }
 
@@ -96,8 +96,8 @@ void MainWindow::Refresh()
 
 void MainWindow::Target(QListWidgetItem* item)
 {
-    ui.lbl_Status->setText("Changes pending.");
-    ui.lst_TargetMods->addItem(item->text());
+    ui.lbl_Status->setText("Changes pending");
+    ui.lst_TargetMods->insertItem(0, item->text());
     item->setBackgroundColor(QColor(184, 255, 207));
     QFont font = item->font();
     font.setBold(true);
@@ -106,7 +106,7 @@ void MainWindow::Target(QListWidgetItem* item)
 
 void MainWindow::Untarget(const QString& name)
 {
-    ui.lbl_Status->setText("Changes pending.");
+    ui.lbl_Status->setText("Changes pending");
     QList<QListWidgetItem*> matches = ui.lst_AllMods->findItems(name, Qt::MatchExactly);
     for (auto p : matches)
     {
