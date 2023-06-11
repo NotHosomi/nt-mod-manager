@@ -11,16 +11,16 @@ Press refresh in the app, and a list of the found mods should appear.
 Double click items from this list to add them to the install list, then click apply.
 
 ## Error Troubleshooting
-# Could not find game directory
+### Could not find game directory
 You put the ModManager directory in the wrong place
 
-# "Mod name": Incompatible file structure
+### "Mod name": Incompatible file structure
 The mod manager expects the mod directory to contain a folder called `/NeotokyoSource/` that contains `/materials`, `/models/`, and/or `/sound/` which contain the actual assets.
 Some mods don't follow this structure and are currently not supported by the mod manager.
 
-# "Mod name": Mod directory not found
+### "Mod name": Mod directory not found
 Bro why did you delete the mod folder then try to install it
 
-# "Mod name": trying to replace a file that doesn't exist
+### "Mod name": trying to replace a file that doesn't exist
 As most NT mods are just file replacements, this error will occur if the mod is trying to add a file to your install that isn't referenced by the game.
 This is primarily a safeguard to make sure the modloader doesn't put stuff in weird places by accident, but can also be caused by the mod having an unexpected file structure.
