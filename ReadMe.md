@@ -10,7 +10,10 @@ Run the application, then place your mods in `<Steamapps>/common/NEOTOKYO/ModMan
 Press refresh in the app, and a list of the found mods should appear.
 Double click items from this list to add them to the install list, then click apply.
 
-## Errors
+## Error Troubleshooting
+# Could not find game directory
+You put the ModManager directory in the wrong place
+
 # "Mod name": Incompatible file structure
 The mod manager expects the mod directory to contain a folder called `/NeotokyoSource/` that contains `/materials`, `/models/`, and/or `/sound/` which contain the actual assets.
 Some mods don't follow this structure and are currently not supported by the mod manager.

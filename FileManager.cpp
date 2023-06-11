@@ -91,6 +91,11 @@ bool FileManager::Mount(std::string sModName, std::string& sErrorMsg)
 {
     // Backup defaults
     fs::path mod_dir("./mods/" + sModName);
+    if (!fs::exists(fs::path("../NeotokyoSource")))
+    {
+        sErrorMsg = "Could not find game directory";
+        return false;
+    }
     if (!fs::exists(mod_dir))
     {
         fs::create_directory(mod_dir);
